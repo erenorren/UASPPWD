@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakultas MIPA - Quality is our concern</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--  CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar: Header  -->
+    <header class="bg-white shadow-lg sticky-top z-3">
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container-fluid container-xl">
+                <!-- Logo dan nama fakultas -->
+                <a class="navbar-brand d-flex align-items-center me-auto" href="#">
+                    <img src="/img/untan.png" alt="Logo UNTAN" class="rounded-circle object-fit-cover me-2" style="height: 40px; width: 40px;">
+                    <span class="fs-4 fw-bolder text-dark">FMIPA</span>
+                </a>   
+                <!-- Tombol untuk menu -->
+                <button id="mobile-menu-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu navigasi dengan dropdown -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav space-x-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beranda">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tentang">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#berita">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#akademik">Akademik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#penelitian">Penelitian, PKM, & Jurnal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="kemahasiswaanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kemahasiswaan
+                            </a>
+                            <ul class="dropdown-menu shadow-sm" aria-labelledby="kemahasiswaanDropdown">
+                                <li><a class="dropdown-item" href="#">Beasiswa</a></li>
+                                <li><a class="dropdown-item" href="#">UKM & Organisasi</a></li>
+                                <li><a class="dropdown-item" href="#">Layanan Mahasiswa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="beranda" class="hero-section text-white text-center py-5 py-md-5 py-lg-8">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h1 class="display-3 fw-bolder mb-3">
+                            Fakultas Matematika dan Ilmu Pengetahuan Alam
+                        </h1>
+                        <p class="fs-4 fw-bold mb-5">
+                            UNIVERSITAS TANJUNGPURA
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Kami -->
+        <section id="tentang" class="py-5 py-md-7 bg-white">
+            <div class="container">
+                <div class="row align-items-center gx-5">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <!-- Foto -->
+                        <img class="img-fluid rounded-3 shadow-lg transform-on-hover" 
+                             src="/img/fmipa/mipa depan.jpeg" 
+                             alt="Foto Dosen dan Mahasiswa Fakultas MIPA">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="fs-1 fw-bolder text-dark mb-4 border-bottom border-4 border-warning pb-2 d-inline-block">
+                            Tentang Fakultas MIPA
+                        </h2>
+                        <p class="mt-4 fs-5 text-secondary">
+                            Selamat datang di website resmi Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Tanjungpura (FMIPA Untan) Pontianak. Pada awal berdirinya tahun 2002, FMIPA Untan bernama Fakultas Matematika dan Ilmu Pengetahuan Alam (Persiapan). Ketika pertama kali menerima mahasiswa pada tahun akademik 2002/2003
+                        </p>
+                        <a href="#" class="mt-3 d-inline-block text-primary fw-semibold link-hover-blue">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Berita & Informasi -->
+        <section id="berita" class="py-5 bg-gray-100">
+            <div class="container">
+                <div class="mb-5">
+                    <h2 class="fs-1 fw-bolder text-dark">
+                        Berita & Informasi
+                    </h2>
+                    <div style="width: 100%; max-width: 600px; height: 4px; background-color: #ffc107; margin-top: 10px;"></div>
+                    <p class="mt-3 fs-5 text-secondary">
+                        Informasi terkini dari lingkungan akademik, penelitian, dan kemahasiswaan.
+                    </p>
+                </div>
+
+                <!-- Row -->
+                <div class="row row-cols-1 row-cols-md-3 g-4 flex-nowrap overflow-x-auto pb-3">
+                    <!-- Berita 1-->
+                    <div class="col" style="min-width: 300px;">
+                        <div class="card h-100 border-0 rounded-3 shadow-sm card-hover">
+                            <img class="card-img-top object-fit-cover" src="/img/konten/seminar.jpg" alt="Seminar Nasional Fisika Komputasi" style="height: 200px;">
+                            <div class="card-body p-4">
+                                <span class="badge bg-warning text-dark px-3 py-1 rounded-pill text-uppercase mb-2">Akademik</span>
+                                <h3 class="card-title fs-5 fw-bold text-dark lh-sm">
+                                    Dosen Sistem Informasi Berhasil Memenangkan Penghargaan Riset Internasional
+                                </h3>
+                                <p class="card-text text-secondary line-clamp-3">
+                                    Dosen Sistem Informasi berhasil mempublikasikan temuan inovatifnya di jurnal Q1, membawa nama baik fakultas...
+                                </p>
+                                <a href="#" class="btn btn-link p-0 text-decoration-none text-primary fw-medium btn-sm">Baca Lebih Lanjut →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 2 -->
+                    <div class="col" style="min-width: 300px;">
+                        <div class="card h-100 border-0 rounded-3 shadow-sm card-hover">
+                            <img class="card-img-top object-fit-cover" src="/img/konten/robot.jpg" alt="Kompetisi Robotika Mahasiswa" style="height: 200px;">
+                            <div class="card-body p-4">
+                                <span class="badge bg-warning text-dark px-3 py-1 rounded-pill text-uppercase mb-2">Kemahasiswaan</span>
+                                <h3 class="card-title fs-5 fw-bold text-dark lh-sm">
+                                    Tim Robotika FMIPA Juara 1 di Kontes Robot Nasional
+                                </h3>
+                                <p class="card-text text-secondary line-clamp-3">
+                                    Pencapaian luar biasa dari UKM Robotika setelah mengalahkan 50 tim dari berbagai universitas...
+                                </p>
+                                <a href="#" class="btn btn-link p-0 text-decoration-none text-primary fw-medium btn-sm">Baca Lebih Lanjut →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 3 -->
+                    <div class="col" style="min-width: 300px;">
+                        <div class="card h-100 border-0 rounded-3 shadow-sm card-hover">
+                            <img class="card-img-top object-fit-cover" src="/img/konten/google.jpg" alt="Kerjasama dengan Industri IT" style="height: 200px;">
+                            <div class="card-body p-4">
+                                <span class="badge bg-warning text-dark px-3 py-1 rounded-pill text-uppercase mb-2">Kerjasama</span>
+                                <h3 class="card-title fs-5 fw-bold text-dark lh-sm">
+                                    FMIPA Kerjasama dengan Perusahaan Google
+                                </h3>
+                                <p class="card-text text-secondary line-clamp-3">
+                                    Membuka kesempatan magang dan proyek kolaborasi bagi mahasiswa Ilmu Komputer dan Statistika...
+                                </p>
+                                <a href="#" class="btn btn-link p-0 text-decoration-none text-primary fw-medium btn-sm">Baca Lebih Lanjut →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Studi -->
+        <section id="akademik" class="py-5 py-md-7 bg-white">
+            <div class="container">
+                <div class="mb-5">
+                    <h2 class="fs-1 fw-bolder text-dark mb-0">
+                        Program Studi
+                    </h2>
+                    <div style="width: 100%; max-width: 600px; height: 4px; background-color: #ffc107; margin-top: 10px;"></div>
+                </div>
+
+                <!-- 3 kolom per baris di semua ukuran -->
+                <div class="row row-cols-3 g-4">
+                    <!-- Prodi 1 -->
+                    <div class="col">
+                        <div class="card-prodi card h-100 border-0 text-center p-4">
+                            <img class="rounded-circle object-fit-cover mx-auto mb-3" src="/img/himpunan/himatika.png" alt="Logo Prodi Matematika" style="width: 96px; height: 96px;">
+                            <h3 class="fs-4 fw-semibold text-dark mb-2">Matematika</h3>
+                            <a href="#" class="mt-2 text-primary hover-link-blue fw-medium">Detail Prodi →</a>
+                        </div>
+                    </div>
+                    <!-- Prodi 2 -->
+                    <div class="col">
+                        <div class="card-prodi card h-100 border-0 text-center p-4">
+                            <img class="rounded-circle object-fit-cover mx-auto mb-3" src="/img/himpunan/himfis.jpeg" alt="Logo Prodi Fisika" style="width: 96px; height: 96px;">
+                            <h3 class="fs-4 fw-semibold text-dark mb-2">Fisika</h3>
+                            <a href="#" class="mt-2 text-primary hover-link-blue fw-medium">Detail Prodi →</a>
+                        </div>
+                    </div>
+                    <!-- Prodi 3 -->
+                    <div class="col">
+                        <div class="card-prodi card h-100 border-0 text-center p-4">
+                            <img class="rounded-circle object-fit-cover mx-auto mb-3" src="/img/himpunan/himki.png" alt="Logo Prodi Kimia" style="width: 96px; height: 96px;">
+                            <h3 class="fs-4 fw-semibold text-dark mb-2">Kimia</h3>
+                            <a href="#" class="mt-2 text-primary hover-link-blue fw-medium">Detail Prodi →</a>
+                        </div>
+                    </div>
+                    <!-- Prodi 4 -->
+                    <div class="col">
+                        <div class="card-prodi card h-100 border-0 text-center p-4">
+                            <img class="rounded-circle object-fit-cover mx-auto mb-3" src="/img/himpunan/himabio.png" alt="Logo Prodi Biologi" style="width: 96px; height: 96px;">
+                            <h3 class="fs-4 fw-semibold text-dark mb-2">Biologi</h3>
+                            <a href="#" class="mt-2 text-primary hover-link-blue fw-medium">Detail Prodi →</a>
+                        </div>
+                    </div>
+                    <!-- Prodi 5 -->
+                    <div class="col">
+                        <div class="card-prodi card h-100 border-0 text-center p-4">
+                            <img class="rounded-circle object-fit-cover mx-auto mb-3" src="/img/himpunan/HIMASTER.png" alt="Logo Prodi Ilmu Komputer" style="width: 96px; height: 96px;">
+                            <h3 class="fs-4 fw-semibold text-dark mb-2">Rekayasa Sistem Komputer</h3>
+                            <a href="#" class="mt-2 text-primary hover-link-blue fw-medium">Detail Prodi →</a>
+                        </div>
+                    </div>
+                    <!-- Prodi 6 -->
+                    <div class="col">
+                        <div class="card-prodi card h-100 border-0 text-center p-4">
+                            <img class="rounded-circle object-fit-cover mx-auto mb-3" src="/img/himpunan/himasta.png" alt="Logo Prodi Statistika" style="width: 96px; height: 96px;">
+                            <h3 class="fs-4 fw-semibold text-dark mb-2">Statistika</h3>
+                            <a href="#" class="mt-2 text-primary hover-link-blue fw-medium">Detail Prodi →</a>
+                        </div>
+                    </div>
+                    <!-- Prodi 7 -->
+                    <div class="col">
+                        <div class="card-prodi card h-100 border-0 text-center p-4">
+                            <img class="rounded-circle object-fit-cover mx-auto mb-3" src="/img/himpunan/himageo.jpeg" alt="Logo Prodi Geofisika" style="width: 96px; height: 96px;">
+                            <h3 class="fs-4 fw-semibold text-dark mb-2">Geofisika</h3>
+                            <a href="#" class="mt-2 text-primary hover-link-blue fw-medium">Detail Prodi →</a>
+                        </div>
+                    </div>
+                    <!-- Prodi 8 -->
+                    <div class="col">
+                        <div class="card-prodi card h-100 border-0 text-center p-4">
+                            <img class="rounded-circle object-fit-cover mx-auto mb-3" src="/img/himpunan/hmik.png" alt="Logo Prodi Aktuaria" style="width: 96px; height: 96px;">
+                            <h3 class="fs-4 fw-semibold text-dark mb-2">Ilmu Kelautan</h3>
+                            <a href="#" class="mt-2 text-primary hover-link-blue fw-medium">Detail Prodi →</a>
+                        </div>
+                    </div>
+                    <!-- Prodi 9 -->
+                    <div class="col">
+                        <div class="card-prodi card h-100 border-0 text-center p-4">
+                            <img class="rounded-circle object-fit-cover mx-auto mb-3" src="/img/himpunan/hmsi.png" alt="Logo Prodi Instrumentasi" style="width: 96px; height: 96px;">
+                            <h3 class="fs-4 fw-semibold text-dark mb-2">Sistem Informasi</h3>
+                            <a href="#" class="mt-2 text-primary hover-link-blue fw-medium">Detail Prodi →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Penelitian, PKM, dan Jurnal ke abu-abu-->
+        <section id="penelitian" class="py-5 py-md-7 bg-light">
+            <div class="container">
+                <div class="mb-5">
+                    <h2 class="fs-1 fw-bolder text-dark mb-0">
+                        Penelitian, PKM, dan Jurnal
+                    </h2>
+                    <div style="width: 100%; max-width: 600px; height: 4px; background-color: #ffc107; margin-top: 10px;"></div>
+                    <p class="mt-3 fs-5 text-secondary">
+                        Kontribusi fakultas dalam riset dan pengabdian masyarakat.
+                    </p>
+                </div>
+                
+                <!-- row-cols-1 untuk mobile, 3 untuk desktop) -->
+                <div class="row row-cols-1 row-cols-md-3 g-4 flex-nowrap overflow-x-auto pb-3">
+                    <!-- Penelitian -->
+                    <div class="col" style="min-width: 300px;">
+                        <div class="card h-100 border-0 p-4 rounded-3 shadow-sm border-top border-4 border-secondary">
+                            <div class="card-body">
+                                <h3 class="card-title fs-3 fw-bold text-dark mb-3">Pusat Penelitian</h3>
+                                <p class="card-text text-secondary mb-4">Fokus pada 4 klaster utama: Material Lanjut, Sains Data, Lingkungan, dan Bio-Sains. Kami menyediakan dana hibah internal untuk mendorong riset dosen dan mahasiswa.</p>
+                                <a href="#" class="text-primary hover-link-blue fw-medium">Lihat Klaster Riset →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PKM -->
+                    <div class="col" style="min-width: 300px;">
+                        <div class="card h-100 border-0 p-4 rounded-3 shadow-sm border-top border-4 border-secondary">
+                            <div class="card-body">
+                                <h3 class="card-title fs-3 fw-bold text-dark mb-3">Pengabdian Masyarakat (PKM)</h3>
+                                <p class="card-text text-secondary mb-4">Implementasi hasil riset di komunitas, seperti pelatihan coding untuk UMKM dan alat pendeteksi polusi berbasis IoT.</p>
+                                <a href="#" class="text-primary hover-link-blue fw-medium">Dokumentasi PKM →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jurnal -->
+                    <div id="jurnal" class="col" style="min-width: 300px;">
+                        <div class="card h-100 border-0 p-4 rounded-3 shadow-sm border-top border-4 border-secondary">
+                            <div class="card-body">
+                                <h3 class="card-title fs-3 fw-bold text-dark mb-3">Jurnal Ilmiah MIPA</h3>
+                                <p class="card-text text-secondary mb-4">Mempublikasikan Jurnal Sains Murni (JSM) dan Jurnal Aplikasi Teknologi (JAT) yang terindeks SINTA dan Scopus.</p>
+                                <a href="#" class="text-primary hover-link-blue fw-medium">Akses Jurnal →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-4 g-4 text-secondary">
+                
+                <div class="col">
+                    <h4 class="fs-5 fw-bold text-white mb-3">MIPA - Quality is our concern</h4>
+                    <p class="small mb-1">JL. Prof. Dr. H. Hadari Nawawi - Kode Pos: 78124</p>
+                    <p class="small">Kalimantan Barat, Indonesia</p>
+                </div>
+
+                <div class="col">
+                    <h4 class="fs-6 fw-semibold text-white mb-3">Tautan</h4>
+                    <ul class="list-unstyled small space-y-2">
+                        <li><a href="#berita" class="text-decoration-none text-secondary hover-link-blue">Berita</a></li>
+                        <li><a href="#prodi" class="text-decoration-none text-secondary hover-link-blue">Daftar Prodi</a></li>
+                        <li><a href="#fasilitas" class="text-decoration-none text-secondary hover-link-blue">Fasilitas Kampus</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4 class="fs-6 fw-semibold text-white mb-3">Hubungi</h4>
+                    <ul class="list-unstyled small space-y-2">
+                        <li>Email: <a href="mailto:info@fmipa.untan.ac.id" class="text-decoration-none text-secondary hover-link-blue">info@fmipa.untan.ac.id</a></li>
+                        <li>Telepon: (0561) 577963</li>
+                    </ul>
+                </div>
+                
+                <div class="col">
+                    <h4 class="fs-6 fw-semibold text-white mb-3">Lokasi Kampus</h4>
+                    <!-- Google Maps -->
+                    <div class="w-100 mb-2 rounded-3 overflow-hidden border border-secondary shadow-sm" style="height: 120px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.816123928564!2d109.346538!3d-0.06011990000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d599127523ec9%3A0x752e4fa340c5556d!2sFakultas%20Matematika%20dan%20Ilmu%20Pengetahuan%20Alam%20(F-MIPA)%20-%20Untan!5e0!3m2!1sen!2sid!4v1763584389258!5m2!1sen!2sid"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/ZSEaR84bcRXZ1G7F6" target="_blank" class="text-decoration-none text-xs text-primary hover-link-blue d-block text-end">Buka di Google Maps →</a>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top border-secondary-subtle mt-4 pt-3">
+             <p class="text-center text-secondary small mb-0">&copy; 2025 FMIPA Universitas Tanjungpura</p>
+        </div>
+    </footer>
+
+    <!-- Script Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>

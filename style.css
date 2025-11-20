@@ -1,0 +1,75 @@
+/* Mengatur font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fc;
+}
+
+.navbar-nav .nav-link {
+    color: #333333 !important;
+    padding: 0.5rem 0.75rem; 
+    border-radius: 6px; 
+    transition: background-color 0.2s ease-in-out; 
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ecd540 !important; 
+    color: #111111 !important; 
+}
+
+.navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle:hover {
+    background-color: #ecd540 !important;
+    color: #111111 !important;
+}
+
+
+.hero-section {
+    background: linear-gradient(135deg, rgba(221, 209, 34, 0.6), rgba(148, 140, 25, 0.5)), url('/img/fmipa/mipa\ hd.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+/* card prodi */
+.card-prodi {
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+.card-prodi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(45, 108, 203, 0.2), 0 4px 6px -4px rgba(45, 108, 203, 0.1);
+}
+
+/*  card berita */
+.card-hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; /* Bootstrap shadow-lg */
+    transform: translateY(-2px);
+}
+
+/* link */
+.hover-link-blue:hover {
+    color: #23477c !important;
+}
+
+.text-primary {
+    color: #2d6ccb !important;
+}
+
+.bg-warning {
+    background-color: #ecd540 !important;
+}
+
+.transform-on-hover {
+    transition: transform 0.5s;
+}
+
+.transform-on-hover:hover {
+    transform: scale(1.02);
+}
